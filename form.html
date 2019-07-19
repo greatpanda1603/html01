@@ -21,12 +21,41 @@
             <input type="email" id="mail" name="user_mail" placeholder="Your E-mail" required>
         </div>
         <div>
+            <label for="promocode">Your 5-digit Promocode:</label>
+            <input type="number" id="promocode" name="user's_promocode" placeholder="Your 5-digit Promocode" max="99999">
+        </div>
+        <div>
             <label for="msg">Message:</label>
             <textarea id="msg" name="user_message"></textarea>
         </div>
         <div class="button">
             <button type="submit">Send your message</button>
         </div>
+        <br>
+        <p><b>What is your role in the company?</b></p>
+        <select id="simple" name="simple">
+            <option>Trainee</option>
+            <option>Accountant</option>
+            <option>CFO</option>
+        </select>
+        <br>
+        <fieldset>
+            <legend><b>What subscription would you like to test?</b></legend>
+            <ul>
+                <li>
+                    <label for="Basic">Basic</label>
+                    <input type="radio" checked id="Basic" name="subscription" value="Basic">
+                </li>
+                <li>
+                    <label for="Premium">Premium</label>
+                    <input type="radio" checked id="Premium" name="subscription" value="Premium">
+                </li>
+                <li>
+                    <label for="Advanced">Advanced</label>
+                    <input type="radio" checked id="Advanced" name="subscription" value="Advanced">
+                </li>
+            </ul>
+        </fieldset>
     </form>
 </body>
 </html>
